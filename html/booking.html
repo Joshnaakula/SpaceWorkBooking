@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | SpaceBook</title>
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">SpaceBook</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Spaces</a>
+            <a href="booking.html" class="active">My Bookings</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <h1>Complete Your Booking</h1>
+        <p>Choose your date and time to reserve your workspace.</p>
+    </section>
+
+    <main class="booking-layout">
+
+        <!-- Selected Workspace -->
+        <section class="booking-form-section">
+
+            <h2>Selected Workspace</h2>
+
+            <div id="selectedSpace" class="selected-space">
+                <!-- Workspace details will appear here -->
+            </div>
+
+            <!-- Booking Form -->
+            <form id="bookingForm">
+
+                <h2>Booking Details</h2>
+
+                <div class="form-group">
+                    <label for="bookingDate">Booking Date</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="startTime">Start Time</label>
+                    <input type="time" id="startTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Duration</label>
+                    <select id="duration" required>
+                        <option value="1">1 Hour</option>
+                        <option value="2">2 Hours</option>
+                        <option value="3">3 Hours</option>
+                        <option value="4">4 Hours</option>
+                        <option value="5">5 Hours</option>
+                        <option value="8">8 Hours</option>
+                    </select>
+                </div>
+
+                <div class="price-summary">
+                    <p>Price per hour:
+                        <strong id="hourlyPrice">₹0</strong>
+                    </p>
+
+                    <p>Duration:
+                        <strong id="selectedDuration">1 Hour</strong>
+                    </p>
+
+                    <h3>Total Amount:
+                        <span id="totalPrice">₹0</span>
+                    </h3>
+                </div>
+
+                <p id="bookingError"></p>
+
+                <button type="submit" id="confirmBtn">
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- My Bookings -->
+        <section class="my-bookings-section">
+
+            <h2>My Bookings</h2>
+
+            <div id="myBookings">
+                <!-- Saved bookings will appear here -->
+            </div>
+
+            <p id="emptyBookings">
+                You haven't made any bookings yet.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SpaceBook. Find your perfect workspace.</p>
+    </footer>
+
+    <script src="../js/booking.js"></script>
+</body>
+</html>
