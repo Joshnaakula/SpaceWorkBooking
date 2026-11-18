@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpaceBook | Find Your Perfect Workspace</title>
+
+    <link rel="stylesheet" href="../css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            Space<span>Book.</span>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="explore.html">Explore Spaces</a>
+            <a href="booking.html">My Bookings</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="../img/spacework1.webp" alt="Modern Workspace" class="hero-image">
+
+    <div class="hero-content">
+        <h1>Find Your Perfect Workspace</h1>
+        <p>Discover, explore and book your ideal workspace.</p>
+        <a href="explore.html" class="hero-btn">Explore Spaces</a>
+    </div>
+                <a href="#about" class="secondary-btn">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+
+        <form class="search-box" id="searchForm">
+
+            <div class="search-field">
+                <label for="location">Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Where do you want to work?"
+                >
+            </div>
+
+            <div class="search-field">
+                <label for="spaceType">Workspace Type</label>
+
+                <select id="spaceType">
+                    <option value="">All spaces</option>
+                    <option value="coworking">Coworking Space</option>
+                    <option value="private">Private Office</option>
+                    <option value="meeting">Meeting Room</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-btn">
+                Search Spaces
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FEATURED WORKSPACES -->
+    <section class="featured-section">
+
+        <div class="section-heading">
+            <p class="tagline">EXPLORE OUR SPACES</p>
+
+            <h2>Featured Workspaces</h2>
+
+            <p>
+                Find the perfect environment for your next productive day.
+            </p>
+        </div>
+
+
+        <div class="workspace-container">
+
+            <!-- WORKSPACE 1 -->
+            <div class="workspace-card">
+
+                <img src="../img/office1.jpg" alt="Coworking space">
+
+                <div class="card-content">
+
+                    <span class="space-type">Coworking Space</span>
+
+                    <h3>Modern Coworking Hub</h3>
+
+                    <p>📍 Hyderabad, India</p>
+
+                    <div class="card-bottom">
+                        <strong>₹300 <small>/ hour</small></strong>
+
+                        <a href="explore.html">View Details →</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- WORKSPACE 2 -->
+            <div class="workspace-card">
+
+                <img src="../img/spacework2.jpg" alt="Private office">
+
+                <div class="card-content">
+
+                    <span class="space-type">Private Office</span>
+
+                    <h3>Executive Work Studio</h3>
+
+                    <p>📍 Bengaluru, India</p>
+
+                    <div class="card-bottom">
+                        <strong>₹500 <small>/ hour</small></strong>
+
+                        <a href="explore.html">View Details →</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- WORKSPACE 3 -->
+            <div class="workspace-card">
+
+                <img src="../img/spacework4.jpg" alt="Meeting room">
+
+                <div class="card-content">
+
+                    <span class="space-type">Meeting Room</span>
+
+                    <h3>Creative Meeting Space</h3>
+
+                    <p>📍 Chennai, India</p>
+
+                    <div class="card-bottom">
+                        <strong>₹700 <small>/ hour</small></strong>
+
+                        <a href="explore.html">View Details →</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view-all">
+            <a href="explore.html">View All Workspaces →</a>
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="benefits-section">
+
+        <div class="section-heading">
+
+            <p class="tagline">WHY SPACEBOOK?</p>
+
+            <h2>Work Better, Anywhere</h2>
+
+        </div>
+
+        <div class="benefits-container">
+
+            <div class="benefit">
+                <div class="benefit-icon">🔍</div>
+                <h3>Easy Discovery</h3>
+                <p>Explore different workspaces and find the right one.</p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">📅</div>
+                <h3>Easy Booking</h3>
+                <p>Reserve your workspace with just a few clicks.</p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">💻</div>
+                <h3>Work Anywhere</h3>
+                <p>Choose a workspace that matches your needs.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+
+        <div>
+            <p class="tagline">ABOUT SPACEBOOK</p>
+
+            <h2>Your Workday, Your Workspace.</h2>
+
+            <p>
+                SpaceBook makes finding and booking workspaces simple.
+                Whether you need a quiet study area, a private office
+                or a professional meeting room, we help you find the
+                perfect place to get things done.
+            </p>
+
+            <a href="explore.html" class="primary-btn">
+                Find Your Space →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            Space<span>Book.</span>
+        </div>
+
+        <p>Find your space. Focus on your work.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Spaces</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 SpaceBook. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/home.js"></script>
+
+</body>
+</html>
