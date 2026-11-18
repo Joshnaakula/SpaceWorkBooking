@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Workspaces | SpaceBook</title>
+    <link rel="stylesheet" href="../css/explore.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">SpaceBook</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html" class="active">Explore Spaces</a>
+            <a href="booking.html">My Bookings</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <h1>Explore Workspaces</h1>
+        <p>Find the perfect space to work, create and collaborate.</p>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="filter-section">
+
+        <div class="filter-group">
+            <label for="locationSearch">Location</label>
+            <input
+                type="text"
+                id="locationSearch"
+                placeholder="Search by city or location"
+            >
+        </div>
+
+        <div class="filter-group">
+            <label for="typeFilter">Workspace Type</label>
+            <select id="typeFilter">
+                <option value="all">All Spaces</option>
+                <option value="Coworking">Coworking Space</option>
+                <option value="Private Office">Private Office</option>
+                <option value="Meeting Room">Meeting Room</option>
+                <option value="Study Space">Study Space</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="priceFilter">Maximum Price (₹/hour)</label>
+            <select id="priceFilter">
+                <option value="all">Any Price</option>
+                <option value="300">Up to ₹300</option>
+                <option value="500">Up to ₹500</option>
+                <option value="1000">Up to ₹1000</option>
+            </select>
+        </div>
+
+        <button id="searchBtn">Search Spaces</button>
+        <button id="resetBtn" class="reset-btn">Reset</button>
+
+    </section>
+
+    <!-- Workspace Listings -->
+    <main class="spaces-section">
+
+        <div class="results-heading">
+            <h2>Available Workspaces</h2>
+            <p id="resultCount"></p>
+        </div>
+
+        <div id="spacesContainer" class="spaces-grid">
+            <!-- JavaScript displays workspace cards here -->
+        </div>
+
+        <p id="noResults" class="no-results">
+            No workspaces found. Try changing your filters.
+        </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SpaceBook. Find your perfect workspace.</p>
+    </footer>
+
+    <script src="../js/explore.js"></script>
+</body>
+</html>
